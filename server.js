@@ -5,7 +5,7 @@ const cors = require('cors');
 
 app.use(express.json());
 var corsOption = {
-    origin : '*'
+    origin : ['*',"https://log-ingestor-backend.vercel.app/","http://localhost:3000/"]
 }
 app.use(cors(corsOption));
 require('./src/routes')(app);
