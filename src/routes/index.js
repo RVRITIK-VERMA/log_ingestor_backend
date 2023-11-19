@@ -13,6 +13,6 @@ module.exports = function(app){
     app.post('/api/getLogsData',log_data_obj.get_Logs_data);
     app.post('/api/insertLogsData',log_data_obj.insert_logs_data);
     app.get('/', (req,res)=>{
-        return res.status(200).send({ status: true, data: 'Api Hit' });
+        return res.status(200).send({ status: true, data: 'Api Hit' })
     });
 }
